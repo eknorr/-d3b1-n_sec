@@ -34,11 +34,6 @@ read -p 'New Username: ' ek
 useradd $ek
 passwd $ek 
 usermod -aG sudo $ek
-#yum groupinstall -y 'X Window System'
-#yum groupinstall -y 'Desktop'
-#sed -i '/id:3:initdefault:/c\id:5:initdefault:' /etc/inittab
-#yum groupinstall -y fonts
-#startx
 #usermod -s /bin/false sysadmin
 #usermod -L sysadmin
 apt-get install rkhunter -y && apt-get install lynis -y && apt-get install clamav -y && apt-get install curl -y && 
