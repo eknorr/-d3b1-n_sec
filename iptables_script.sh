@@ -1,7 +1,7 @@
 #!/bin/sh
 passwd root
 sed -i '/#PermitRootLogin yes/c\PermitRootLogin no' /etc/ssh/sshd_config
-service sshd restart
+sudo service network-manager restart
 ##I commented the below command out temporarly incase I needed to get back into root.
 #usermod -s /sbin/nologin root
 iptables -F
